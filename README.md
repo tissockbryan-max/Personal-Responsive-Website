@@ -4,6 +4,8 @@ A Basic Personal Responsive Website
 1. Shows website contains a navbar, hero(profile), about and contact section.
 2. Responsive on laptop, ,large phone size (640px) only.
 3. I'll make it responsive on small phones(480px), tablets and large desktop screens with time.
+4. This site has been deployed
+        URL: https://ranjoy.netlify.app/
 ## Features
 HTML and CSS only
 ## Installation
