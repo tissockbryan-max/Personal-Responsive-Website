@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter";
+    font-style: italic;
+    background: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+:root {
+    --border: 1px solid #000;
+}
+
+/*==========NAVIGATION BAR==========*/
+
+.navbar {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    backdrop-filter: blur(5px);
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    /* box-shadow: 0px 0px 5px 0px hsl(0, 0%, 30%); */
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar:hover {
+    border-bottom: var(--border);
+}
+
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .logo {
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40%;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navbar ul li {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+} 
+
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.contact-btn button {
+    border: var(--border);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-btn button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*==========NAVIGATION BAR END==========*/
+
+
+/*==========HERO SECTION==========*/
+.section-1 {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    padding: 50px;
+}
+
+.hero-section {
+    /* border: 1px solid #333; */
+    border: none;
+    border-radius: 6px;
+    padding: 100px 70px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0px 0px 5px 0px hsl(0, 0%, 30%); */
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-section:hover {
+    border: var(--border);
+}
+
+.hero-section .intro {
+    /* border: 1px solid green; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.intro .intro-name {
+    margin-bottom: 20px;
+}
+
+.intro .intro-name span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* text-decoration: underline; */
+}
+
+.intro .intro-passage {
+    margin-bottom: 10px;
+}
+
+.intro .intro-passage span {
+    font-weight: 600;
+    /* text-decoration: underline; */
+}
+
+.intro .know-more {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #888;
+}
+
+.intro-icons {
+    /* border: 1px solid yellow; */
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    padding: 12px;
+    gap: 30px;
+}
+
+.intro-icons a i{
+    color: #000;
+}
+
+
+.hero-section .profile-img {
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 100%;
+    margin-right: 8%;
+    border-radius: 20px;
+    background-image: url(images/IMG_5986.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*==========HERO SECTION END==========*/
+
+
+/*==========ABOUT ME SECTION==========*/
+.section-2 {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    display: flex;
+}
+
+.section-2 .about-me {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 50px;
+    border-radius: 6px;
+    /* box-shadow: 0px 0px 5px 0px hsl(0, 0%, 30%); */
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+
+.section-2 .about-me:hover {
+    border: var(--border); 
+}
+
+.section-2 .about-me .about-me-img {
+    border: 1px solid #ccc;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(images/IMG_5986.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section-2 .about-me .about-me-passage {
+    /* border: 1px solid #ccc; */
+    width: 50%;
+    min-height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.section-2 .about-me .about-me-passage p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+.about-me-passage p span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-me-passage .tech-img {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*==========ABOUT ME SECTION END==========*/
+
+
+/*==========ABOUT MY INFO SECTION==========*/
+
+.section-3 {
+    /* border: 1px solid blue; */
+    display: flex;
+    padding: 50px;
+}
+
+.section-3 .about-info {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+    border-radius: 6px;
+    /* box-shadow: 0px 0px 5px 0px hsl(0, 0%, 30%); */
+    border: 1px solid #ccc;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease-in-out;
+}
+
+.section-3 .about-info:hover {
+    border: var(--border);
+}
+
+.about-info div {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 20%;
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    /* backdrop-filter: blur(40px); */
+}
+
+.about-info .about-me-heading {
+    position: absolute;
+    top: 50px;
+    right: 46%;
+}
+
+.about-info div:hover {
+    /* box-shadow: 0px 0px 5px 2px #ccc;    */
+    border: var(--border);
+    transform: translateY(-20px);
+}
+
+.about-info div i {
+    /* border: 1px solid green; */
+    font-size: 40px;
+}
+
+.about-info div h2 {
+    margin-bottom: 40px;
+}
+
+.about-info .skills, .hobbies {
+    margin-top: 100px;
+}
+
+/*==========ABOUT MY INFO SECTION END==========*/
+
+/*==========CONTACT SECTION==========*/
+
+.section-4 {
+    /* border: 1px solid blue; */
+    padding: 50px;
+}
+
+.section-4 .contact-section {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+}
+
+.section-4 .contact {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+.section-4 .contact p {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.section-4 .contact span {
+    font-size: 1rem;
+    color: #000;
+}
+
+.section-4 .contact-me {
+    /* border: 1px solid yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contact-me input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-me input:focus {
+    border-radius: 12px;
+    outline: none;
+}
+
+.contact-me .send-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-me button {
+    width: 30%;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-me button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    /* border: 1px solid  blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 40px;
+}
