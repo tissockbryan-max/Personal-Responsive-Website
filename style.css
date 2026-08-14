@@ -464,7 +464,7 @@ footer {
     padding: 40px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
 
     .navbar {
         width: 100%;
