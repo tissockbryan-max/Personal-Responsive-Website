@@ -11,17 +11,19 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <!--NAVIGATION BAR-->
             <nav class="navbar">
-                <a href="#" class="logo">@RANJOY</a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <a href="#home" class="logo">@RANJOY</a>
+                <ul id="main-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="contact-btn"><a class="contact-action" href="#contact">Contact Me</a></li>
                 </ul>
-                <div class="bar"><i class="fa-solid fa-bars"></i></div>
-                <div class="contact-btn"><button type="submit">Contact Me</button></div>
+                <button class="bar" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
             </nav>
 
             <!--HERO SECTION-->
@@ -57,7 +59,7 @@
         <hr>
 
             <!--ABOUT ME SECTION-->
-        <section class="section-2">
+        <section class="section-2" id="about">
             <div class="about-me">
                 <div class="about-me-img"></div>
                    <div class="about-me-passage">
@@ -116,7 +118,7 @@
         </section>
 
             <!--CONTACT SECTION-->
-        <section class="section-4">
+        <section class="section-4" id="contact">
             <div class="contact-section">
                 <div class="contact">
                     <h2>Contact</h2>
